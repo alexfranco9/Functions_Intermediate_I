@@ -59,12 +59,12 @@ iterateDictionary2('first_name', students)
 iterateDictionary2('last_name', students)
 
 # 4. Iterate Through a Dictionary with List Values #
-### NEEDS WORK!!!
-
 
 def printInfo(some_dict):
     for key in some_dict:
-        print(str(len(some_dict.get(key)))
+        print(str(len(some_dict[key])),key.upper()) 
+        for values in some_dict[key]:
+            print(values)
 
 dojo = {
     'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
